@@ -14,21 +14,22 @@ public class Producto {
     
     private int codigoProducto;
     private Fabricante fabricante;
-    private float peso;
-    private float largo;
-    private float ancho;
-    private float alto;
+    private double peso;
+    private double largo;
+    private double ancho;
+    private double alto;
     private String descripcion;
     private String nombre;
     private int cantidad;
-    private float precio;
+    private double precio;
     private byte[] imagen;  
 
     public Producto() {
         fabricante = new Fabricante();
     }
 
-    public Producto(int codigoProducto, Fabricante fabricante, float peso, float largo, float ancho, float alto, String descripcion, String nombre, int cantidad, float precio, byte[] imagen) {
+    public Producto(int codigoProducto, Fabricante fabricante, double peso, double largo, double ancho, double alto,
+                    String descripcion, String nombre, int cantidad, double precio, byte[] imagen) {
         this.codigoProducto = codigoProducto;
         this.fabricante = fabricante;
         this.peso = peso;
@@ -58,35 +59,35 @@ public class Producto {
         this.fabricante = fabricante;
     }
 
-    public float getPeso() {
+    public double getPeso() {
         return peso;
     }
 
-    public void setPeso(float peso) {
+    public void setPeso(double peso) {
         this.peso = peso;
     }
 
-    public float getLargo() {
+    public double getLargo() {
         return largo;
     }
 
-    public void setLargo(float largo) {
+    public void setLargo(double largo) {
         this.largo = largo;
     }
 
-    public float getAncho() {
+    public double getAncho() {
         return ancho;
     }
 
-    public void setAncho(float ancho) {
+    public void setAncho(double ancho) {
         this.ancho = ancho;
     }
 
-    public float getAlto() {
+    public double getAlto() {
         return alto;
     }
 
-    public void setAlto(float alto) {
+    public void setAlto(double alto) {
         this.alto = alto;
     }
 
@@ -114,11 +115,11 @@ public class Producto {
         this.cantidad = cantidad;
     }
 
-    public float getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(float precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
 
